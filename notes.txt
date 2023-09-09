@@ -1,0 +1,19 @@
+Name: Cassandra Ko
+Destination Domain: https://blitz.gg/tft/set-9-5
+Usage: I use this destination to see the newest updates to the game I play with my friends.
+
+IP Address: 172.64.151.107
+Physical Location: San Francisco
+Interesting Fact: San Francisco has the second largest Chinatown outside of Asia
+
+IP Address: 149.31.1.1
+Physical Location: New York City
+Interesting Fact: A little over 8 million people live in New York City.
+
+IP Address: 199.109.107.202
+Physical Location: New York City
+Interesting Fact: 800+ languages are spoken in New York City.
+
+IP Address: 172.64.151.107
+Physical Location: New York City
+Interesting Fact: The first pizzeria in the US was opened in New York in 1905.
