@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI';
+    background-color: rgb(15, 15, 15);
+}
+
+.main-container {
+    max-width: 90rem;
+    margin: 0 auto;
+    background-color: rgb(15, 15, 15);
+    width: 71%; /* same as binary-container */
+    max-width: 80rem; /* same as binary-container */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3.5%;
+}
+
+.img-block,
+.text-block {
+    display: block;
+}
+
+.text-block {
+    font-size: 0.9rem;
+    color: white;
+    margin-left: 3%;
+}
+
+.text-block-bottom {
+    font-size: 0.9rem;
+    color: white;
+    margin-left: 3%;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: -5%;
+}
+
+.larger-text {
+    font-size: 1.75rem;
+    margin-left: 3%;
+}
+
+.largest-text {
+    font-size: 2.4rem; 
+}
+
+.text-white {
+    color: white;
+    margin-top: 2%;
+}
+
+.flight-button {
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    background-color: transparent;
+    border: 3px solid white; 
+    padding: 10px 35px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    bottom: 12%; 
+    border-radius: 20px;
+}
+
+.flight-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.binary-container {
+    font-family: 'Segoe UI';
+    background: rgb(15, 15, 15); 
+    padding: 0.5px; 
+    margin-bottom: 8%; 
+    width: 75%; 
+    max-width: 80rem; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fade-in-element {
+    opacity: 0;
+    transition: opacity 3s ease-in;  /* 1 second fade-in */
+}

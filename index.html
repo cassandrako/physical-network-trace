@@ -1,11 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Physical Network Trace</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+    <div class="main-container">
+        <p class="text-block text-white fade-in-element">12.28.23 - 1.22.24</p>
+        <p class="text-block larger-text text-white fade-in-element">Traceroute: West -> East</p>
+    </div>
+    <div class="binary-container">
+        <p id="binaryCode" class="text-block text-center largest-text text-white"></p>
+        <div class="button-container">
+            <button class="flight-button text-white fade-in-element">begin the flight.</button>
+        </div>        
+
+<script>
+    const binaryString = "01010100 01101111 01110010 01101111 01101110 01110100 01101111 00101100 00100000 01010011 01101111 01110101 01110100 01101000 00100000 01001011 01101111 01110010 01100101 01100001 00101100 00100000 01001000 01101111 01101110 01100111 00100000 01001011 01101111 01101110 01100111 00101100 00100000 01001010 01100001 01110000 01100001 01101110"; 
+    const displayElement = document.getElementById("binaryCode");
+const fadeInElements = document.querySelectorAll(".fade-in-element");
+let currentIndex = 0;
+
+function displayNextCharacter() {
+    if (currentIndex < binaryString.length) {
+        displayElement.textContent += binaryString[currentIndex];
+        currentIndex++;
+
+        // function that activates the css fade in
+        if (currentIndex === Math.floor(binaryString.length / 2)) {
+            fadeInElements.forEach(el => {
+                el.style.opacity = "1";
+            });
+        }
+
+        setTimeout(displayNextCharacter, 95);  // Adjust the time for faster/slower reveals
+    }
+}
+
+    // makes sure the animation starts once user loads the website
+    window.addEventListener("DOMContentLoaded", displayNextCharacter);
+</script>
 </body>
 </html>

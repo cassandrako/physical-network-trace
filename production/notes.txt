@@ -17,3 +17,14 @@ Interesting Fact: 800+ languages are spoken in New York City.
 IP Address: 172.64.151.107
 Physical Location: New York City
 Interesting Fact: The first pizzeria in the US was opened in New York in 1905.
+
+After a change in direction due to lack of locations, I will now be conducting a traceroute of my upcoming winter trip to Asia.
+
+I will be going to these locations:
+
+1. Toronto, Ontario
+2. Seoul, South Korea
+3. Hong Kong
+4. Tokyo, Japan
+5. Kyoto, Japan
+6. Nagano, Japan
