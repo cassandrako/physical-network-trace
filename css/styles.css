@@ -59,15 +59,28 @@ body {
     padding: 10px 35px;
     cursor: pointer;
     transition: background-color 0.3s;
-    position: absolute; 
+    position: absolute;
+    /* or relative/absolute  */
     left: 50%; 
     transform: translateX(-50%); 
-    bottom: 12%; 
+    bottom: 18%; 
     border-radius: 20px;
 }
 
 .flight-button:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-height: 890px) {
+    .flight-button {
+        bottom: 10%;
+    }
+}
+
+@media (min-height: 1000px) {
+    .flight-button {
+        bottom: 15%;
+    }
 }
 
 .binary-container {
@@ -84,4 +97,17 @@ body {
 .fade-in-element {
     opacity: 0;
     transition: opacity 3s ease-in;  /* 1 second fade-in */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.3; /* Starting from a faint appearance */
+    }
+    to {
+        opacity: 1; /* Full opacity */
+    }
+}
+
+.fading-char {
+    animation: fadeIn 0.5s ease-in forwards;
 }
