@@ -163,3 +163,10 @@ body {
 .top-padding {
     padding-top: 2rem; 
 }
+
+.grid-item img, .binary-location, .grid-item > p:not(.binary-location) {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+

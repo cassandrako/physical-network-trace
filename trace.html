@@ -44,6 +44,30 @@
 
         <p class="binary-location top-padding">173.32.243.185, 180.228.172.138, 35.215.178.254, 222.145.227.204, 1.75.8.225, 210.138.184.59</p>
     </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    let images = document.querySelectorAll('.grid-item img');
+    let texts = document.querySelectorAll('.binary-location, .grid-item > p:not(.binary-location)');
+    let delay = 1000; //how slow the images go one by one
+
+    images.forEach((img, index) => {
+        setTimeout(() => {
+            img.style.opacity = '1';
+
+           
+            if (index === images.length - 1) {
+                setTimeout(() => {
+                    texts.forEach(text => {
+                        text.style.opacity = '1';
+                    });
+                }, delay);
+            }
+        }, delay * index);  
+    });
+});
+
+    </script>
 </body>
 
 </html>
